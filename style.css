@@ -25,6 +25,13 @@ nav a {
   font-weight: 500;
 }
 
+.navlinks a:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #333;
+  box-shadow: 0px 0px 7px #f8f8f8;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -43,6 +50,25 @@ main {
   width: 170px;
 }
 
+.button:hover,
+img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px black;
+  background-color: rgba(254, 254, 238, 0.604);
+  color: #333;
+}
+.hamburger {
+  display: none;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.hamburger:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 7px #fff;
+  border-radius: 50%;
+  color: goldenrod;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -100,27 +126,7 @@ footer {
   padding: 10px;
 }
 
-.navlinks a:hover {
-  cursor: pointer;
-  background-color: #f8f8f8;
-  color: #333;
-  box-shadow: 0px 0px 7px #f8f8f8;
-}
-
-.button:hover,
-img:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 5px black;
-  background-color: rgba(254, 254, 238, 0.604);
-  color: #333;
-}
-
-.hamburger {
-  display: none;
-}
-
-/* Jag valde att inte köra mobil-först eftersom koden redan fanns här.
-Om jag har tid tänkte jag göra om hela sidan med mobil först i åtanke*/
+/* Jag valde att inte köra mobil-först eftersom koden redan fanns här.*/
 
 @media (max-width: 768px) {
   html {
@@ -133,16 +139,6 @@ Om jag har tid tänkte jag göra om hela sidan med mobil först i åtanke*/
 
   .hamburger {
     display: flex;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .hamburger:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 7px #fff;
-    border-radius: 50%;
-    color: goldenrod;
   }
 
   .section {
@@ -150,19 +146,9 @@ Om jag har tid tänkte jag göra om hela sidan med mobil först i åtanke*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10;
-  }
-
-  .section {
     margin: 0px;
     border: none;
   }
-  /* main {
-    margin: -10px;
-  } */
-  /* .container {
-    max-width: 100%;
-  } */
 
   .section1Text {
     display: flex;
