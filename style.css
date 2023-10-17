@@ -126,7 +126,7 @@ footer {
   padding: 10px;
 }
 
-/* Jag valde att inte köra mobil-först eftersom koden redan fanns här.*/
+/* Tips från David: försöka minimera kod i @media */
 
 @media (max-width: 768px) {
   html {
