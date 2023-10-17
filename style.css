@@ -46,8 +46,8 @@ main {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 80vw;
-  /* max-width: 900px; */
+  /* max-width: 80vw; */
+  max-width: 900px;
 }
 
 .section {
@@ -152,12 +152,17 @@ Om jag har tid tänkte jag göra om hela sidan med mobil först i åtanke*/
     justify-content: center;
     gap: 10;
   }
-  main {
+
+  .section {
+    margin: 0px;
+    border: none;
+  }
+  /* main {
     margin: -10px;
-  }
-  .container {
+  } */
+  /* .container {
     max-width: 100%;
-  }
+  } */
 
   .section1Text {
     display: flex;
