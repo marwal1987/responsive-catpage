@@ -72,7 +72,6 @@ img:hover {
 .container {
   display: flex;
   flex-direction: column;
-  /* max-width: 80vw; */
   max-width: 900px;
 }
 
