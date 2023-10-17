@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #f8f8f8;
+  text-decoration: none;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #333;
+  color: #f8f8f8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background-color 800ms;
+  width: 170px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  /* max-width: 900px; */
+}
+
+.section {
+  padding: 40px;
+  background-color: #f8f8f8;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.section1Text {
+  max-width: 100%;
+}
+
+.section1 img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.bigCat {
+  max-width: 100%;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 10px;
+}
+
+.navlinks a:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #333;
+  box-shadow: 0px 0px 7px #f8f8f8;
+}
+
+.button:hover,
+img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px black;
+  background-color: rgba(254, 254, 238, 0.604);
+  color: #333;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Jag valde att inte köra mobil-först eftersom koden redan fanns här.
+Om jag har tid tänkte jag göra om hela sidan med mobil först i åtanke*/
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #fff;
+    border-radius: 50%;
+    color: goldenrod;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10;
+  }
+  main {
+    margin: -10px;
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  .section1Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section img {
+    max-width: 100%;
+  }
+  .catGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
